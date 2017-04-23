@@ -42,19 +42,21 @@
 <body background="http://dabaoku.com/dabaoku/uploads/allimg/110208/112335C43-0.jpg" width="100%" height="100%">
 <script>
 $(document).ready(function() {
-  $("p").show();
-  $("ul").show();
+  $("#list1").hide();
+  $("#list2").hide();
+  $("#list3").hide();
+  $("#list4").hide();
   $("#me").click(function(){
-    $("#list1").toggle("slow");
+    $("#list1").slideToggle("slow");
 });
   $("#interest").click(function(){
-    $("#list2").toggle("slow");
+    $("#list2").slideToggle("slow");
 });
   $("#club").click(function(){
-    $("#list3").toggle("slow");
+    $("#list3").slideToggle("slow");
 });
   $("#education").click(function(){
-    $("#list4").toggle("slow");
+    $("#list4").slideToggle("slow");
 });
 });
 </script>
