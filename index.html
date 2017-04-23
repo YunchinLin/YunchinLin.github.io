@@ -32,6 +32,7 @@
 <head>
   <title>林芸妗</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 
 <marquee class="marquee">~Welcome to YunchinLin's GitHub Page~</marquee>
@@ -39,39 +40,57 @@
 <p></p>
 
 <body background="http://dabaoku.com/dabaoku/uploads/allimg/110208/112335C43-0.jpg" width="100%" height="100%">
+<script>
+$(document).ready(function() {
+  $("p").hide();
+  $("ul").hide();
+  $("#me").click(function(){
+    $("#list1").toggle("slow");
+});
+  $("#interest").click(function(){
+    $("#list2").toggle("slow");
+});
+  $("#club").click(function(){
+    $("#list3").toggle("slow");
+});
+  $("#education").click(function(){
+    $("#list4").toggle("slow");
+});
+});
+</script>
 <center><a herf="#"><img  class="smaller-image thick-orchid-border"  src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/13254485_971662682949206_8964087710117954921_n.jpg?oh=909abd1dac515f664e4a45797f5a601c&oe=594D2867" ></a></center>
 <center>
   <p></p>
 
-  <b class="blue-text">About Me</b>
-		
+  <b id="me" class="blue-text">About Me</b>
+	<span id="list1">	
 	<li>Name:<a href="https://www.facebook.com/profile.php?id=100003164508476"><i>林芸妗</i></a> (YunchinLin)</li>
 	<li>Birthday:86.12.31</li>
 	<li>Constellation:Capricorn</li>
 	<li>Email address:bess861231@gmail.com</li>
-
+        </span>
 	<p></p>
 
-  <b class="blue-text">Interests</b>
-
+  <b id="interest" class="blue-text">Interests</b>
+        <span id="list2">
 	<li>Listen to music</li>
 	<li>Play the piano & saxophone</li>
-
+        </span>
 	<p></p>
 
-  <b class="blue-text">Club</b>
-
+  <b id="club" class="blue-text">Club</b>
+    <span id="list3">
     <li><a href="https://www.facebook.com/fjuyoungsun/?fref=ts"><i>揚升青年</i></a> (Young Sun)</li>
-
+    </span>
     <p></p>
 
-  <b class="blue-text">Education</b>
-	
+  <b id="education" class="blue-text">Education</b>
+	<span id="list4">
 	<li>Graduated from <a href="http://210.240.1.27/~syps/schools/web/index.php"><i>Shin Yi Elementary School</i></a></li>
 	<li>Graduated from <a href="http://www.nrjh.kl.edu.tw/index.php?inpage=main"><i>Nan Rong Junior High School</i></a></li>
 	<li>Graduated from <a href="http://www.klgsh.kl.edu.tw/bin/home.php"><i>Keelung Girl's Senior High School</i></a></li>
 	<li>Studying in <a href="http://www.fju.edu.tw/"><i>Fu Jen Catholic University</i></a> major in <a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"><i>Medical Informatics and Innovative Applications</i></a></li>
-
+        </span>
 </center>
 </body> 
 
